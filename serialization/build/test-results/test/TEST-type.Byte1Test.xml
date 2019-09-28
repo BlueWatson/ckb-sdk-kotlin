@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="type.Byte1Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:13" hostname="duanyangyangs-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="toByte1InitEmptyTest()" classname="type.Byte1Test" time="0.001"/>
+  <testcase name="toByte1InitTest()" classname="type.Byte1Test" time="0.001"/>
+  <testcase name="toByte1Test()" classname="type.Byte1Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

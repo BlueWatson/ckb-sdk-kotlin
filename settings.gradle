@@ -1,0 +1,8 @@
+rootProject.name = 'ckb'
+
+include 'core'
+include 'console'
+include 'utils'
+include 'serialization'
+
+

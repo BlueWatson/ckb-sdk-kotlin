@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="service.ApiTest" tests="31" skipped="31" failures="0" errors="0" timestamp="2019-09-28T11:10:05" hostname="duanyangyangs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testGetTipBlockNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetCellbaseOutputCapacityDetails()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testComputeTransactionHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetEpochByNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetCellsByLockHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetLockHashIndexStates()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetLiveCellWithData()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetLiveCell()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetTipHeader()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetCurrentEpoch()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testBlockAndTransaction()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDeindexLockHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetLiveCellsByLockHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSendTransaction()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetBlockchainInfo()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetBannedAddress()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetBlockHashByNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="localNodeInfo()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetPeersState()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetHeaderByNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testIndexLockHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetHeader()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetLiveCellWithoutData()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testTransaction()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="txPoolInfo()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetBlockByNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSetBan()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDryRunTransaction()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="getPeers()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testIndexLockHashWithBlockNumber()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetTransactionsByLockHash()" classname="service.ApiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

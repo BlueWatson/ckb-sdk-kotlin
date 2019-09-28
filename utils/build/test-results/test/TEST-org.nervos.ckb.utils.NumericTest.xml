@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nervos.ckb.utils.NumericTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:15" hostname="duanyangyangs-MacBook-Pro.local" time="0.035">
+  <properties/>
+  <testcase name="testToHexStringNoPrefixZeroPadded()" classname="org.nervos.ckb.utils.NumericTest" time="0.02"/>
+  <testcase name="testLittleEndian()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testQuantityDecodeMissingValue()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testToHexStringWithPrefix()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testToHexStringZeroPaddedNegative()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testQuantityDecodeMissingPrefix()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testCleanHexPrefix()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testQuantityDecodeLeadingZero()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testToBytesPadded()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testToHexStringWithPrefixZeroPadded()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testToHexString()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testIsIntegerValue()" classname="org.nervos.ckb.utils.NumericTest" time="0.002"/>
+  <testcase name="testQuantityDecode()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testQuantityEncode()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testHexStringToByteArray()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testPrependHexPrefix()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <testcase name="testToHexStringNoPrefix()" classname="org.nervos.ckb.utils.NumericTest" time="0.0"/>
+  <testcase name="testToHexStringZeroPaddedTooLargs()" classname="org.nervos.ckb.utils.NumericTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="type.Byte32Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:13" hostname="duanyangyangs-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="byte32InitErrorTest()" classname="type.Byte32Test" time="0.001"/>
+  <testcase name="byte32InitEmptyErrorTest()" classname="type.Byte32Test" time="0.001"/>
+  <testcase name="byte32InitTest()" classname="type.Byte32Test" time="0.001"/>
+  <testcase name="toBytesTest()" classname="type.Byte32Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

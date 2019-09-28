@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nervos.ckb.address.AddressTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:15" hostname="duanyangyangs-MacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="testPublicKeyHash()" classname="org.nervos.ckb.address.AddressTest" time="0.002"/>
+  <testcase name="testBlake160FromAddressTestnet()" classname="org.nervos.ckb.address.AddressTest" time="0.004"/>
+  <testcase name="testPublicKeyHashToAddressMainnet()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <testcase name="testArgToAddressTestnet()" classname="org.nervos.ckb.address.AddressTest" time="0.0"/>
+  <testcase name="testPubkeyHashToAddressMainnetRFC()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <testcase name="testBlake160FromAddressMainnet()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <testcase name="testPublicKeyHashToAddressTestnet()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <testcase name="testPrivateKeyHashToAddressTestnet()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <testcase name="testAddressAscii()" classname="org.nervos.ckb.address.AddressTest" time="0.0"/>
+  <testcase name="testAddressParse()" classname="org.nervos.ckb.address.AddressTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
