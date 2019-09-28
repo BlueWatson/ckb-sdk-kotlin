@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="type.UInt32Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:13" hostname="duanyangyangs-MacBook-Pro.local" time="0.002">
-  <properties/>
-  <testcase name="getLengthTest$serialization()" classname="type.UInt32Test" time="0.001"/>
-  <testcase name="toBytesTest$serialization()" classname="type.UInt32Test" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

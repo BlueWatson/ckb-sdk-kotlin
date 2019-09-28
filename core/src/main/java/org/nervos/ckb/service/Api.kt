@@ -3,7 +3,6 @@ package org.nervos.ckb.service
 import com.google.gson.reflect.TypeToken
 import java.math.BigInteger
 import java.util.Arrays
-import java.util.Collections
 import org.nervos.ckb.type.*
 import org.nervos.ckb.type.cell.CellOutputWithOutPoint
 import org.nervos.ckb.type.cell.CellTransaction
@@ -196,7 +195,7 @@ class Api @JvmOverloads constructor(nodeUrl: String, isDebug: Boolean = false) {
   fun indexLockHash(lockHash: String, indexFrom: String): LockHashIndexState? {
     return rpcService.post<LockHashIndexState>(
       "index_lock_hash",
-      Arrays.asList(lockHash, Numeric.toHexString(indexFrom)),
+      listOf(lockHash, Numeric.toHexString(indexFrom)),
       LockHashIndexState::class.java
     )
   }

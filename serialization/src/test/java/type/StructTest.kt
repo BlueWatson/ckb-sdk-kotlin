@@ -16,7 +16,7 @@ class StructTest {
     val byte1 = Byte1("ab")
     val byte32 = Byte32("0102030405060708090001020304050607080900010203040506070809000102")
 
-    val struct = Struct(Arrays.asList(byte1, byte32))
+    val struct = Struct(listOf(byte1, byte32))
     Assertions.assertArrayEquals(
       Numeric.hexStringToByteArray(
         "0xab0102030405060708090001020304050607080900010203040506070809000102"

@@ -1,7 +1,6 @@
 package type
 
 import java.io.IOException
-import java.util.Collections
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test

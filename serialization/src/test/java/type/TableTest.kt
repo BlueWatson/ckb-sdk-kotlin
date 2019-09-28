@@ -1,7 +1,6 @@
 package type
 
 import java.util.Arrays
-import java.util.Collections
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.nervos.ckb.Encoder
@@ -19,7 +18,7 @@ class TableTest {
   internal fun toBytesTest() {
     val argList = listOf(Bytes("3954acece65096bfa81258983ddb83915fc56bd8"))
     val table = Table(
-      Arrays.asList(
+      listOf(
         Byte32("68d5438ac952d2f584abf879527946a537e82c7f3c1cbf6d8ebf9767437d8e88"),
         Byte1("01"),
         Dynamic(argList)
@@ -37,7 +36,7 @@ class TableTest {
   internal fun getLengthTest() {
     val argList = listOf(Bytes("3954acece65096bfa81258983ddb83915fc56bd8"))
     val table = Table(
-      Arrays.asList(
+      listOf(
         Byte32("68d5438ac952d2f584abf879527946a537e82c7f3c1cbf6d8ebf9767437d8e88"),
         Byte1("01"),
         Dynamic(argList)

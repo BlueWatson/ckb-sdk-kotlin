@@ -3,12 +3,10 @@ package org.nervos.ckb.example.transaction
 import java.io.IOException
 import java.math.BigInteger
 import java.util.ArrayList
-import java.util.Collections
 import org.nervos.ckb.address.AddressUtils
 import org.nervos.ckb.service.Api
 import org.nervos.ckb.system.type.SystemScriptCell
 import org.nervos.ckb.transaction.CellGatherer
-import org.nervos.ckb.transaction.CollectedCells
 import org.nervos.ckb.transaction.Utils
 import org.nervos.ckb.type.Script
 import org.nervos.ckb.type.cell.CellOutput

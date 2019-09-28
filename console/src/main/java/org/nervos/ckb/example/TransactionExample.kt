@@ -2,16 +2,12 @@ package org.nervos.ckb.example
 
 import java.io.IOException
 import java.math.BigInteger
-import java.util.Arrays
-import java.util.Collections
-import org.nervos.ckb.example.transaction.CellsWithPrivateKey
 import org.nervos.ckb.example.transaction.CollectUtils
 import org.nervos.ckb.example.transaction.Receiver
 import org.nervos.ckb.example.transaction.Sender
 import org.nervos.ckb.service.Api
 import org.nervos.ckb.transaction.CellGatherer
 import org.nervos.ckb.transaction.TransactionBuilder
-import org.nervos.ckb.type.cell.CellInput
 
 /** Copyright © 2019 Nervos Foundation. All rights reserved.  */
 object TransactionExample {

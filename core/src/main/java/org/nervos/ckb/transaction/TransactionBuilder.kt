@@ -3,7 +3,6 @@ package org.nervos.ckb.transaction
 import java.io.IOException
 import java.math.BigInteger
 import java.util.ArrayList
-import java.util.Collections
 import org.nervos.ckb.crypto.Blake2b
 import org.nervos.ckb.crypto.secp256k1.ECKeyPair
 import org.nervos.ckb.crypto.secp256k1.Sign

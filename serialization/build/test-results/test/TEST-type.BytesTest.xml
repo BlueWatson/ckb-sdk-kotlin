@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="type.BytesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-28T11:11:13" hostname="duanyangyangs-MacBook-Pro.local" time="0.001">
-  <properties/>
-  <testcase name="getLengthTest()" classname="type.BytesTest" time="0.0"/>
-  <testcase name="toBytesTest()" classname="type.BytesTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

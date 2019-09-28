@@ -2,7 +2,6 @@ package type
 
 import java.util.ArrayList
 import java.util.Arrays
-import java.util.Collections
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.nervos.ckb.type.base.DynType
@@ -21,7 +20,7 @@ class DynamicTest {
   @Test
   fun toBytesTest() {
     val script = Table(
-      Arrays.asList(
+      listOf(
         Byte32("0x68d5438ac952d2f584abf879527946a537e82c7f3c1cbf6d8ebf9767437d8e88"),
         Byte1("01"),
         Dynamic(
@@ -30,7 +29,7 @@ class DynamicTest {
       )
     )
 
-    val cellOutput = Table(Arrays.asList(UInt64(125000000000L), script, Empty()))
+    val cellOutput = Table(listOf(UInt64(125000000000L), script, Empty()))
     val cellOutputs = ArrayList<DynType<*>>()
     cellOutputs.add(cellOutput)
     val outputs = Dynamic(cellOutputs)
