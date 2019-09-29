@@ -216,22 +216,22 @@ object Bech32 {
 
     /** Encode a Bech32 string.  */
     fun encode(hrp: String, values: ByteArray): String {
-        var hrp = hrp
-        if (hrp.isEmpty())
+        var hrpTemp = hrp
+        if (hrpTemp.isEmpty())
             throw AddressFormatException.InvalidDataLength(
-                "Human-readable part is too short: " + hrp.length
+                "Human-readable part is too short: " + hrpTemp.length
             )
-        if (hrp.length > 83)
+        if (hrpTemp.length > 83)
             throw AddressFormatException.InvalidDataLength(
-                "Human-readable part is too long: " + hrp.length
+                "Human-readable part is too long: " + hrpTemp.length
             )
-        hrp = hrp.toLowerCase(Locale.ROOT)
-        val checksum = createChecksum(hrp, values)
+        hrpTemp = hrpTemp.toLowerCase(Locale.ROOT)
+        val checksum = createChecksum(hrpTemp, values)
         val combined = ByteArray(values.size + checksum.size)
         System.arraycopy(values, 0, combined, 0, values.size)
         System.arraycopy(checksum, 0, combined, values.size, checksum.size)
-        val sb = StringBuilder(hrp.length + 1 + combined.size)
-        sb.append(hrp)
+        val sb = StringBuilder(hrpTemp.length + 1 + combined.size)
+        sb.append(hrpTemp)
         sb.append('1')
         for (b in combined) {
             sb.append(CHARSET[b.toInt()])

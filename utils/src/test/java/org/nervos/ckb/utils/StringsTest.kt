@@ -7,22 +7,22 @@ import org.nervos.ckb.utils.Strings.zeros
 
 class StringsTest {
 
-  @Test
-  fun testRepeat() {
-    Assertions.assertEquals(Strings.repeat('0', 0), "")
-    Assertions.assertEquals(Strings.repeat('1', 3), "111")
-  }
+    @Test
+    fun testRepeat() {
+        Assertions.assertEquals(Strings.repeat('0', 0), "")
+        Assertions.assertEquals(Strings.repeat('1', 3), "111")
+    }
 
-  @Test
-  fun testZeros() {
-    Assertions.assertEquals(zeros(0), "")
-    Assertions.assertEquals(zeros(3), "000")
-  }
+    @Test
+    fun testZeros() {
+        Assertions.assertEquals(zeros(0), "")
+        Assertions.assertEquals(zeros(3), "000")
+    }
 
-  @Test
-  fun testEmptyString() {
-    Assertions.assertTrue(isEmpty(null))
-    Assertions.assertTrue(isEmpty(""))
-    Assertions.assertFalse(isEmpty("hello world"))
-  }
+    @Test
+    fun testEmptyString() {
+        Assertions.assertTrue(isEmpty(null))
+        Assertions.assertTrue(isEmpty(""))
+        Assertions.assertFalse(isEmpty("hello world"))
+    }
 }

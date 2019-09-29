@@ -5,7 +5,6 @@ import org.nervos.ckb.crypto.secp256k1.Sign.CURVE
 import java.math.BigInteger
 import java.security.KeyPair
 import java.util.Arrays
-import java.util.Objects
 import org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey
 import org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
 import org.bouncycastle.math.ec.ECPoint
@@ -15,15 +14,15 @@ import org.nervos.ckb.utils.Numeric
 /** Copyright © 2018 Nervos Foundation. All rights reserved.  */
 class ECKeyPair(val privateKey: BigInteger?, val publicKey: BigInteger?) {
 
-    override fun equals(o: Any?): Boolean {
-        if (this === o) {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) {
             return true
         }
-        if (o == null || javaClass != o.javaClass) {
+        if (other == null || javaClass != other.javaClass) {
             return false
         }
 
-        val ecKeyPair = o as ECKeyPair?
+        val ecKeyPair = other as ECKeyPair?
 
         return if (privateKey != ecKeyPair!!.privateKey) {
             false
@@ -89,11 +88,11 @@ class ECKeyPair(val privateKey: BigInteger?, val publicKey: BigInteger?) {
 
         /** Returns public key point from the given private key.  */
         private fun publicPointFromPrivate(privateKey: BigInteger): ECPoint {
-            var privateKey = privateKey
+            var privateKeyBigInteger = privateKey
             if (privateKey.bitLength() > CURVE.n.bitLength()) {
-                privateKey = privateKey.mod(CURVE.n)
+                privateKeyBigInteger = privateKey.mod(CURVE.n)
             }
-            return FixedPointCombMultiplier().multiply(CURVE.g, privateKey)
+            return FixedPointCombMultiplier().multiply(CURVE.g, privateKeyBigInteger)
         }
     }
 }
