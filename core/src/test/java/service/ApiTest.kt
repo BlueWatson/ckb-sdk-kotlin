@@ -212,13 +212,13 @@ class ApiTest {
     @Test
     fun testIndexLockHash() {
         val lockHashIndexState =
-            api!!.indexLockHash("0x59d90b1718471f5802de59501604100a5e3b463865cdfe56fa70ed23865ee32e")
+            api.indexLockHash("0x59d90b1718471f5802de59501604100a5e3b463865cdfe56fa70ed23865ee32e")
         Assertions.assertNotNull(lockHashIndexState)
     }
 
     @Test
     fun testIndexLockHashWithBlockNumber() {
-        val lockHashIndexState = api!!.indexLockHash(
+        val lockHashIndexState = api.indexLockHash(
             "0x59d90b1718471f5802de59501604100a5e3b463865cdfe56fa70ed23865ee32e", "0"
         )
         Assertions.assertNotNull(lockHashIndexState)

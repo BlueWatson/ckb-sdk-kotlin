@@ -10,5 +10,7 @@ class Epoch (
     var startNumber: String,
 
     var length: String,
-    var difficulty: String
+
+    @SerializedName("compact_target")
+    var compactTarget: String
 )
