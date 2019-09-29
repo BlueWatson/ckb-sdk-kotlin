@@ -20,7 +20,9 @@ internal class RpcService(private val url: String, isDebug: Boolean) {
 
   init {
     if (isDebug) {
-      client = OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor()).build()
+      val logging = HttpLoggingInterceptor()
+      logging.level = HttpLoggingInterceptor.Level.BODY
+      client = OkHttpClient.Builder().addInterceptor(logging).build()
     } else {
       client = OkHttpClient()
     }
