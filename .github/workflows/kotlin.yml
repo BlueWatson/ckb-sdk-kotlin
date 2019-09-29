@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Download dependences
+      run: ./gradlew install
+    - name: Build and test
+      run: |
+        ./gradlew build
+        ./gradlew test
