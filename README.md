@@ -107,6 +107,10 @@ val publicKey =
 val address = utils.generateFromPublicKey(publicKey)
 ```
 
+## Development
+
+The SDK use [ktlint](https://github.com/pinterest/ktlint) to make code more clean and tidy.
+
 ## License
 
 The SDK is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
