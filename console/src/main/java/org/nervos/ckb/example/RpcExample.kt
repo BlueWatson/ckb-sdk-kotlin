@@ -13,14 +13,14 @@ object RpcExample {
 
     @JvmStatic
     fun main(args: Array<String>) {
-      println("Welcome to use SDK to visit CKB")
-      println(
-        "CKB information: " + Gson().toJson(api.blockchainInfo)
-      )
-      val currentBlockNumber = api.tipBlockNumber
-      println("Current block number: $currentBlockNumber")
-      println(
-        "Current block information: " + Gson().toJson(api.getBlockByNumber(currentBlockNumber.toString()))
-      )
+        println("Welcome to use SDK to visit CKB")
+        println(
+            "CKB information: " + Gson().toJson(api.getBlockchainInfo())
+        )
+        val currentBlockNumber = api.getTipBlockNumber()
+        println("Current block number: $currentBlockNumber")
+        println(
+            "Current block information: " + Gson().toJson(api.getBlockByNumber(currentBlockNumber.toString()))
+        )
     }
 }

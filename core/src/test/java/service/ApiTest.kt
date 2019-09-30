@@ -48,19 +48,19 @@ class ApiTest {
 
     @Test
     fun testGetTipHeader() {
-        val header = api.tipHeader
+        val header = api.getTipHeader()
         Assertions.assertNotNull(header)
     }
 
     @Test
     fun testGetTipBlockNumber() {
-        val blockNumber = api.tipBlockNumber
+        val blockNumber = api.getTipBlockNumber()
         Assertions.assertNotNull(blockNumber.toString())
     }
 
     @Test
     fun testGetCurrentEpoch() {
-        val epoch = api.currentEpoch
+        val epoch = api.getCurrentEpoch()
         Assertions.assertNotNull(epoch)
     }
 
@@ -91,7 +91,7 @@ class ApiTest {
 
     @Test
     fun getPeers() {
-        val peers = api.peers
+        val peers = api.getPeers()
         Assertions.assertNotNull(peers)
     }
 
@@ -104,7 +104,7 @@ class ApiTest {
 
     @Test
     fun testGetBannedAddress() {
-        val bannedAddresses = api.bannedAddress
+        val bannedAddresses = api.getBannedAddress()
         Assertions.assertNotNull(bannedAddresses)
     }
 
@@ -116,13 +116,13 @@ class ApiTest {
 
     @Test
     fun testGetBlockchainInfo() {
-        val blockchainInfo = api.blockchainInfo
+        val blockchainInfo = api.getBlockchainInfo()
         Assertions.assertNotNull(blockchainInfo)
     }
 
     @Test
     fun testGetPeersState() {
-        val peerStates = api.peersState
+        val peerStates = api.getPeersState()
         Assertions.assertNotNull(peerStates)
     }
 
@@ -232,7 +232,7 @@ class ApiTest {
 
     @Test
     fun testGetLockHashIndexStates() {
-        val lockHashIndexStates = api.lockHashIndexStates
+        val lockHashIndexStates = api.getLockHashIndexStates()
         Assertions.assertNotNull(lockHashIndexStates)
     }
 
