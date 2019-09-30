@@ -38,7 +38,7 @@ apply plugin: "org.jlleitschuh.gradle.ktlint"
 mainClassName = 'org.nervos.ckb.example.RpcExample'
 applicationName = 'ckb-sdk-kotlin'
 
-description 'ckb-sdk-java base project'
+description 'ckb-sdk-kotlin base project'
 
 allprojects {
 
