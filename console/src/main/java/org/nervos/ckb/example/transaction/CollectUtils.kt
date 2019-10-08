@@ -57,11 +57,8 @@ class CollectUtils(private val api: Api) {
                 )
             )
         }
-        var needCapacity = BigInteger.ZERO
-        for (receiver in receivers) {
-            needCapacity = needCapacity.add(receiver.capacity)
-        }
-        if (collectedCapacity.compareTo(needCapacity) > 0) {
+        val needCapacity = receivers.map { receiver -> receiver.capacity }.reduce { acc, capacity -> acc + capacity }
+        if (collectedCapacity > needCapacity) {
             val changeAddressBlake160 = addressUtils.getBlake160FromAddress(changeAddress)
             cellOutputs.add(
                 CellOutput(

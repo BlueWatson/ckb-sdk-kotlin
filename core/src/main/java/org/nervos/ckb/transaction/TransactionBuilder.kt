@@ -101,7 +101,7 @@ class TransactionBuilder(api: Api) {
         val message = blake2b.doFinalString()
 
         val signature = Numeric.toHexString(
-            Sign.signMessage(Numeric.hexStringToByteArray(message), ecKeyPair, false)
+            Sign.signMessage(Numeric.hexStringToByteArray(message), ecKeyPair)
                 .signature
         )
         return signature + Numeric.cleanHexPrefix(witness)

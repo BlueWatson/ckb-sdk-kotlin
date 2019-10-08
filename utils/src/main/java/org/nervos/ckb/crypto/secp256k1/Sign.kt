@@ -6,6 +6,7 @@ import java.math.BigInteger
 import java.security.SignatureException
 import java.util.Arrays
 import org.bouncycastle.asn1.x9.X9IntegerConverter
+import org.bouncycastle.crypto.CipherParameters
 import org.bouncycastle.crypto.digests.SHA256Digest
 import org.bouncycastle.crypto.ec.CustomNamedCurves
 import org.bouncycastle.crypto.params.ECDomainParameters
@@ -194,7 +195,7 @@ object Sign {
         val signer = ECDSASigner(HMacDSAKCalculator(SHA256Digest()))
 
         val privKey = ECPrivateKeyParameters(ecKeyPair.privateKey, CURVE)
-        signer.init(true, privKey)
+        signer.init(true, privKey as CipherParameters?)
         val components = signer.generateSignature(transactionHash)
 
         return ECDSASignature(components[0], components[1]).toCanonicalised()

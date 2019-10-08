@@ -118,10 +118,7 @@ object TransactionExample {
     private fun sendCapacity(
         privateKey: String, receivers: List<Receiver>, changeAddress: String
     ): String? {
-        var needCapacity = BigInteger.ZERO
-        for (receiver in receivers) {
-            needCapacity = needCapacity.add(receiver.capacity)
-        }
+        val needCapacity = receivers.map { receiver -> receiver.capacity }.reduce { acc, capacity -> acc + capacity }
         val senders = listOf(Sender(privateKey, needCapacity))
         return sendCapacity(senders, receivers, changeAddress)
     }
@@ -135,7 +132,7 @@ object TransactionExample {
 
         val cellsWithPrivateKeys = txUtils.collectInputs(senders)
 
-        builder.addInputs(txUtils.collectInputs(senders).flatMap { cellsWithPrivateKey -> cellsWithPrivateKey.inputs })
+        builder.addInputs(cellsWithPrivateKeys.flatMap { cellsWithPrivateKey -> cellsWithPrivateKey.inputs })
 
         builder.addOutputs(txUtils.generateOutputs(receivers, changeAddress))
 

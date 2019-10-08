@@ -4,10 +4,7 @@ import java.io.IOException
 import java.math.BigInteger
 import java.util.ArrayList
 import org.nervos.ckb.service.Api
-import org.nervos.ckb.system.type.SystemScriptCell
-import org.nervos.ckb.type.Script
 import org.nervos.ckb.type.cell.CellInput
-import org.nervos.ckb.type.cell.CellOutputWithOutPoint
 import org.nervos.ckb.utils.Numeric
 import kotlin.math.min
 
@@ -24,8 +21,8 @@ class CellCollector(private val api: Api) {
             val currentToBlockNumber = min(fromBlockNumber + 100, toBlockNumber)
             val cellOutputs = api.getCellsByLockHash(
                 lockHash,
-                BigInteger.valueOf(fromBlockNumber).toString(),
-                BigInteger.valueOf(currentToBlockNumber).toString()
+                fromBlockNumber.toString(),
+                currentToBlockNumber.toString()
             )
 
             if (cellOutputs != null && cellOutputs.isNotEmpty()) {
@@ -59,8 +56,8 @@ class CellCollector(private val api: Api) {
             val currentToBlockNumber = min(fromBlockNumber + 100, toBlockNumber)
             val cellOutputs = api.getCellsByLockHash(
                 lockHash,
-                BigInteger.valueOf(fromBlockNumber).toString(),
-                BigInteger.valueOf(currentToBlockNumber).toString()
+                fromBlockNumber.toString(),
+                currentToBlockNumber.toString()
             )
 
             if (cellOutputs != null && cellOutputs.isNotEmpty()) {
