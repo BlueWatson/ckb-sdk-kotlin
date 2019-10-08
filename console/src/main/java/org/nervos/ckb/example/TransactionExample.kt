@@ -6,7 +6,7 @@ import org.nervos.ckb.example.transaction.CollectUtils
 import org.nervos.ckb.example.transaction.Receiver
 import org.nervos.ckb.example.transaction.Sender
 import org.nervos.ckb.service.Api
-import org.nervos.ckb.transaction.CellGatherer
+import org.nervos.ckb.transaction.CellCollector
 import org.nervos.ckb.transaction.TransactionBuilder
 
 /** Copyright © 2019 Nervos Foundation. All rights reserved.  */
@@ -18,7 +18,8 @@ object TransactionExample {
     private var KeyPairs: List<KeyPair> = ArrayList()
 
     init {
-        KeyPairs = listOf(KeyPair(
+        KeyPairs = listOf(
+            KeyPair(
                 "08730a367dfabcadb805d69e0e613558d5160eb8bab9d6e326980c2c46a05db2",
                 "ckt1qyqxgp7za7dajm5wzjkye52asc8fxvvqy9eqlhp82g"
             ), KeyPair(
@@ -36,7 +37,8 @@ object TransactionExample {
             ), KeyPair(
                 "55b55c7bd177ed837dde45bbde12fc79c12fb8695be258064f40e6d5f65db96c",
                 "ckt1qyqrlj6znd3uhvuln5z83epv54xu8pmphzgse5uylq"
-            ))
+            )
+        )
     }
 
     @Throws(Exception::class)
@@ -47,7 +49,8 @@ object TransactionExample {
         val receivers1 = listOf(
             Receiver(KeyPairs[0].address, BigInteger("800").multiply(UnitCKB)),
             Receiver(KeyPairs[1].address, BigInteger("900").multiply(UnitCKB)),
-            Receiver(KeyPairs[2].address, BigInteger("1000").multiply(UnitCKB)))
+            Receiver(KeyPairs[2].address, BigInteger("1000").multiply(UnitCKB))
+        )
 
         println(
             "Before transfer, miner's balance: "
@@ -77,12 +80,14 @@ object TransactionExample {
         val senders1 = listOf(
             Sender(KeyPairs[0].privateKey, BigInteger("500").multiply(UnitCKB)),
             Sender(KeyPairs[1].privateKey, BigInteger("600").multiply(UnitCKB)),
-            Sender(KeyPairs[2].privateKey, BigInteger("700").multiply(UnitCKB)))
+            Sender(KeyPairs[2].privateKey, BigInteger("700").multiply(UnitCKB))
+        )
 
         val receivers2 = listOf(
             Receiver(KeyPairs[3].address, BigInteger("400").multiply(UnitCKB)),
             Receiver(KeyPairs[4].address, BigInteger("500").multiply(UnitCKB)),
-            Receiver(KeyPairs[5].address, BigInteger("600").multiply(UnitCKB)))
+            Receiver(KeyPairs[5].address, BigInteger("600").multiply(UnitCKB))
+        )
 
         val changeAddress = "ckt1qyqfnym6semhw2vzm33fjvk3ngxuf5433l9qz3af8a"
 
@@ -106,7 +111,7 @@ object TransactionExample {
 
     @Throws(IOException::class)
     private fun getBalance(address: String): BigInteger {
-        return CellGatherer(api).getCapacitiesWithAddress(address)
+        return CellCollector(api).getCapacityWithAddress(address)
     }
 
     @Throws(IOException::class)
